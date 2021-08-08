@@ -10,20 +10,14 @@ public class JogoDeDados {
 		while(opcao != 1) {
 			System.out.println("Digite 0 para rodar os dados ou 1 para Sair");
 			opcao = sc.nextInt();
-			dado1 = rd.nextInt(7);
-			dado2 = rd.nextInt(7);
+			dado1 = rd.nextInt(6)+1;
+			dado2 = rd.nextInt(6)+1;
 			switch(opcao) {
 			case 0:
-				if(dado1 == 0) {
-					dado1++;
-				}
-				if(dado2 == 0) {
-					dado2++;
-				}
 				if(dado1 == dado2) {
-					System.out.println("<<<<< PARABENS, VOCÊ CONSEGUIU UM DUPLO: "+ dado1 +" >>>>>");
+					System.out.println("<<<<< PARABENS, VOCÊ CONSEGUIU UM DUPLO: ["+ dado1 +"] >>>>>");
 				}else {				
-					System.out.println("O resultado do 1º dado é: " + dado1 + " e do 2º dado é: "+ dado2);
+					System.out.println("O resultado do 1º dado é: [" + dado1 + "] e do 2º dado é: ["+ dado2 +"]");
 					  }
 				break;
 			case 1:
